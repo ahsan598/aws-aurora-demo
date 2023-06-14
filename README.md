@@ -1,4 +1,4 @@
-## Deploying Amazon Aurora MYSQL Database in AWS
+## Deploying Amazon Aurora MySQL Database in AWS
 
 ### Resources used in this project:
 -   Amazon VPC
