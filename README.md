@@ -7,7 +7,7 @@
 -   Security groups and Auto sacling group
 -   EC2 Instance
 -   Amazon Aurora Database
--   SNS, Amazon cloudwtch & AWS KMS
+-   SNS, Amazon cloudwatch & AWS KMS
 
 
 ### Project Architecture:
@@ -39,13 +39,13 @@ As shown in Figure, sets up the following:
 
 ### Test Deployment:
 
-- To test the deployment, confirm that the MySQL database is accepting connections by following below steps:
+##### To test the deployment, confirm that the MySQL database is accepting connections by following below steps:
 
 1. Download the latest version of MySQL Workbench, and install it on the workstation from which you will be connecting to the Aurora MySQL DB cluster.
 2. From the AWS CloudFormation console, on the BastionStack Outputs tab, note the value for EIP1.
 3. From the AWS CloudFormation console, on the AuroraStack Outputs tab, note the values of DBName, DBMasterUsername, AuroraClusterEndpoint, and AuroraClusterPort
 4. Create an SSH tunnel to the bastion host using the following command,
-"ssh -N -L <AuroraClusterPort>:<AuroraClusterEndpoint>:<AuroraClusterPort> ec2-user@EIP1 -i <KeyPairName>"
+'ssh -N -L <AuroraClusterPort>:<AuroraClusterEndpoint>:<AuroraClusterPort> ec2-user@EIP1 -i <KeyPairName>'
 
 A message appears indicating that you’ve connected to the bastion host.
 
