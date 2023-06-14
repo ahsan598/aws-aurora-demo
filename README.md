@@ -1,13 +1,17 @@
 ## Deploying Amazon Aurora MySQL Database in AWS
 
-### Resources used in this project:
--   Amazon VPC
--   Public & Private Subnets
--   Internet gateway & NAT gateway
--   Security groups and Auto sacling group
--   EC2 Instance
--   Amazon Aurora Database
--   SNS, Amazon cloudwatch & AWS KMS
+### Resources created in this project:
+- Amazon Virtual Private Cloud (Amazon VPC)
+- Internet Gateway (IGW)
+- NAT Gateway (across all public subnets)
+- Amazon VPC subnets (public, private) in all the Availability Zones (AZs) selected
+- Mulitple VPC Security Groups
+- Bastion Auto Scaling Group instances - in public subnets
+- Amazon Relational Database Service (Amazon RDS) Aurora cluster - in private - subnets
+- Amazon Route53 DNS record set
+- Amazon CloudWatch alarms to monitor Amazon EFS burst credit balance
+- Amazon Aurora Database (Aurora Db Reader & Writer)
+- SNS, Amazon cloudwatch & AWS KMS
 
 
 ### Project Architecture:
