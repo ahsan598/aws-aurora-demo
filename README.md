@@ -50,11 +50,3 @@ As shown in Figure, sets up the following:
 4. In the Connect to MySQL Server dialog box, enter the administrator password (DBMasterUserPassword) that you entered during stack creation.
 5. A MySQL Workbench dashboard appears.
 6. Terminate the SSH tunnel by pressing Ctrl+C. You’ve completed the testing.
-
-
-
-
-
-
-
-##### Learned from coursera
